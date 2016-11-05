@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    classpath:/schema/spring-beans-3.1.xsd
+	http://www.springframework.org/schema/context
+	classpath:/schema/spring-context-4.1.xsd">
+ 	<!-- config file -->
+ 	<context:property-placeholder location="classpath:config.properties" />
+ 	
+ 	<!-- package scan for beans -->
+ 	<context:component-scan base-package="org.justforfun.dao.impl"></context:component-scan>
+ </beans>
